@@ -1,19 +1,28 @@
 package carte;
 
-//clasa concreta ce construieste obiectul complex utilizand
-//interfata de tip Builder
+/**clasa concreta ce construieste obiectul complex utilizand
+ * interfata de tip Builder
+ * @author rusum
+ *
+ */
 
 public class CarteDirector {
 
 private CarteBuilder carteBuilder;
 	
-	//setare tip Carte
+	/**
+	 * setare tip Carte
+	 * @param carteBuilder
+	 */
 	
 	public CarteDirector (CarteBuilder carteBuilder){
 		this.carteBuilder = carteBuilder;
 	}
 	
-	//returnare Carte 
+	/**
+	 * returnare Carte 
+	 * @return
+	 */
 	
 	public Carte getCarte()
 	{

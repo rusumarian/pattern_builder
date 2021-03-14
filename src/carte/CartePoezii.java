@@ -1,7 +1,10 @@
 package carte;
 
-//implementare a interfetei CarteBuilder
-//concrete Builder
+/**implementare a interfetei CarteBuilder
+ * concrete Builder
+ * @author rusum
+ *
+ */
 
 public class CartePoezii implements CarteBuilder {
 	private final Carte carte = new Carte();

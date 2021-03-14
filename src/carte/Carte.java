@@ -1,6 +1,10 @@
 package carte;
 
-//clasa ce defineste obiectul complex ce este construit
+/**
+ * Clasa ce defineste obiectul complex ce este construit
+ * @author rusum
+ *
+ */
 
 public final class Carte {
 	private String titlu;
@@ -11,7 +15,11 @@ public final class Carte {
 	private String nrpag;
 	private String nrvolum;
 	
-//setteri (campuri private - acces doar in clasa)
+/**
+ * Setteri (campuri private - acces doar in clasa)
+ * @param titlu
+ * @return
+ */
 	
 	public Carte setTitlu(String titlu){
 		this.titlu=titlu;
@@ -47,7 +55,8 @@ public final class Carte {
 		this.nrvolum=nrvolum;
 		return this;
 	}
-// supraincarcare toString() pentru afisare
+//  Supraincarcare toString() pentru afisare
+
 	
 	public String toString(){
 		StringBuilder sb = new StringBuilder();

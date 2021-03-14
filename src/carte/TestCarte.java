@@ -6,23 +6,33 @@ import java.util.Scanner;
 		
 		public static void main(String[] args) {
 			
-			// realizare CarteBuilder de tipul CarteBucatariaJamilei
+			/**
+			 *  realizare CarteBuilder de tipul CarteBucatariaJamilei
+			 */
 			
 			CarteBuilder cartebucate = new CarteBucatariaJamilei();
 		
-			// trimiterea builderului Carte1 directorului
+			/**
+			 *  trimiterea builderului Carte1 directorului
+			 */
 			
 			CarteDirector director1 = new CarteDirector (cartebucate);
 			
-			// crearea obiectului de tipul cerut
+			/**
+			 *  crearea obiectului de tipul cerut
+			 */
 			
 			director1.buildCarte();
 			
-			// directorul returneaza obiectul pe baza
+			/**
+			 *  directorul returneaza obiectul pe baza
+			 */
 			
 			Carte carte1 = director1.getCarte();
 			
-			//afisare
+			/**
+			 * afisare
+			 */
 			
 			System.out.println(carte1.toString());
 			
@@ -38,7 +48,9 @@ import java.util.Scanner;
 			Carte carte3 = director3.getCarte();
 			System.out.println(carte3);
 			
-			// carte inserata de la tastatura\
+			/**
+			 *  carte inserata de la tastatura\
+			 */
 			Carte userCarte = new Carte();
 			
 			Scanner user_input = new Scanner(System.in);
